@@ -9,7 +9,8 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "start": "grunt build && grunt upload",
+    "start" : "node server.js",
+    "start-grunt": "grunt build && grunt upload",
     "test": "grunt test",
     "lint": "eslint ./"
   },
@@ -26,7 +27,6 @@
     "express-partials": "^0.2.0",
     "express-session": "^1.13.0",
     "grunt": "^0.4.4",
-    "grunt-contrib-concat": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.1",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
@@ -38,9 +38,10 @@
     "mocha": "^2.4.5",
     "mongoose": "^4.4.10",
     "request": "^2.34.0",
-    "sqlite3": "~3.1.1"
+    "sqlite3": "^4.0.4"
   },
   "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
     "supertest": "^1.2.0"
   }
 }
